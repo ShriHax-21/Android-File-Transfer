@@ -104,30 +104,6 @@ File-Transfer/
 └── README.md
 ```
 
-## 🔧 Configuration
-
-| Setting | Default | Description |
-|---------|---------|-------------|
-| Hotspot Port | 1234 | Port for hotspot mode connections |
-| WiFi Port | 1234 | Port for same-network connections |
-| Upload Directory | `uploads/` | Where uploaded files are stored |
-| Download Directory | `downloads/` | Where downloadable files are placed |
-
-## 🎨 Theme Colors
-
-The application uses a **Chill Dark Theme** with a relaxing color palette:
-
-| Element | Color | Hex |
-|---------|-------|-----|
-| Background | Deep Ocean | `#0f1419` |
-| Card Background | Dark Slate | `#1c2630` |
-| Accent Primary | Calm Teal | `#4fd1c5` |
-| Success | Soft Green | `#68d391` |
-| Error | Soft Coral | `#fc8181` |
-| Warning | Soft Orange | `#f6ad55` |
-| Info | Soft Blue | `#63b3ed` |
-| Text Primary | Soft White | `#e2e8f0` |
-
 ## 📦 Web API Endpoints
 
 | Endpoint | Method | Description |
@@ -176,26 +152,6 @@ The max upload size can be changed in `android_transfer_gui.py` at line 317. The
 - Ensure files are placed in the `downloads/` folder
 - Check file permissions
 
-## 🖼️ Screenshots
-
-### Desktop Application
-```
-┌──────────────────────────────────────────────┐
-│  📱 Android File Transfer                    │
-│  Transfer files between Android and PC       │
-├──────────────────────────────────────────────┤
-│  Server Settings          │    QR Code       │
-│  ○ 📶 Hotspot Mode       │   ┌─────────┐   │
-│  ● 🌐 WiFi Mode          │   │ ▓▓▓▓▓▓▓ │   │
-│  Port: [1234]            │   │ ▓▓▓▓▓▓▓ │   │
-│                          │   │ ▓▓▓▓▓▓▓ │   │
-│  [▶ Start Server]        │   └─────────┘   │
-├──────────────────────────────────────────────┤
-│  📋 Activity Log                             │
-│  [INFO] Server started on http://192.168... │
-│  [SUCCESS] File uploaded: document.pdf      │
-└──────────────────────────────────────────────┘
-```
 
 ## 🤝 Contributing
 
@@ -203,19 +159,6 @@ Contributions are welcome! Feel free to:
 - 🐛 Report bugs
 - 💡 Suggest new features
 - 🔧 Submit pull requests
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- Built with [Python](https://python.org) and [Tkinter](https://docs.python.org/3/library/tkinter.html)
-- QR code generation powered by [python-qrcode](https://github.com/lincolnloop/python-qrcode)
-- Image processing by [Pillow](https://pillow.readthedocs.io/)
-
----
-
 <p align="center">
-Made with ❤️ for easy Android-PC file transfers
+Made with ❤️ for easy Android-PC file transfers by ShriHax
 </p>
