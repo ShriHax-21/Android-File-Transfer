@@ -1,4 +1,4 @@
-# � NetToss - Wireless File Transfer
+# 🚀 NetToss - Wireless File Transfer
 
 A modern, feature-rich graphical application for wireless file transfer between mobile devices and PC. Built with Python and Tkinter, featuring a beautiful **Chill Dark Theme** and easy-to-use web interface.
 
