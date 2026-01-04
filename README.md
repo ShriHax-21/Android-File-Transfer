@@ -1,6 +1,6 @@
-# 📱 Android File Transfer - GUI Version
+# � NetToss - Wireless File Transfer
 
-A modern, feature-rich graphical application for wireless file transfer between Android devices and PC. Built with Python and Tkinter, featuring a beautiful **Chill Dark Theme** and easy-to-use web interface.
+A modern, feature-rich graphical application for wireless file transfer between mobile devices and PC. Built with Python and Tkinter, featuring a beautiful **Chill Dark Theme** and easy-to-use web interface.
 
 ![Python](https://img.shields.io/badge/Python-3.6+-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg)
@@ -53,7 +53,7 @@ A modern, feature-rich graphical application for wireless file transfer between 
 
 3. **Run the application**:
    ```bash
-   python android_transfer_gui.py
+   python nettoss.py
    ```
 
 > **Note:** The application will automatically attempt to install the QR code library if it's missing on first run.
@@ -96,9 +96,9 @@ A modern, feature-rich graphical application for wireless file transfer between 
 ## 📁 Folder Structure
 
 ```
-File-Transfer/
-├── android_transfer_gui.py   # Main application
-├── uploads/                  # Files uploaded from Android (auto-created)
+NetToss/
+├── nettoss.py                # Main application
+├── uploads/                  # Files uploaded from phone (auto-created)
 ├── downloads/                # Files available for download (auto-created)
 ├── connection_qr.png         # Generated QR code image
 └── README.md
@@ -117,7 +117,7 @@ File-Transfer/
 
 ### 📦 Max Upload Size Limits
 
-The max upload size can be changed in `android_transfer_gui.py` at line 317. The practical limit depends on your PC's available RAM since files are loaded into memory during upload.
+The max upload size can be changed in `nettoss.py` at line 317. The practical limit depends on your PC's available RAM since files are loaded into memory during upload.
 
 **Recommended limits based on RAM:**
 
@@ -160,5 +160,5 @@ Contributions are welcome! Feel free to:
 - 💡 Suggest new features
 - 🔧 Submit pull requests
 <p align="center">
-Made with ❤️ for easy Android-PC file transfers by ShriHax
+Made with ❤️ for easy wireless file transfers by ShriHax
 </p>

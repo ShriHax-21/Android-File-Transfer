@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Android File Transfer Server - GUI Version
-A graphical interface for transferring files between Android and PC
+NetToss - Wireless File Transfer Server
+A graphical interface for transferring files between mobile devices and PC
 """
 
 import os
@@ -240,7 +240,7 @@ class HotspotTransferHandler(SimpleHTTPRequestHandler):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Android File Transfer - Hotspot Mode</title>
+    <title>NetToss - Hotspot Mode</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2311998e'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white'>📱</text></svg>">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -505,7 +505,7 @@ class HotspotTransferHandler(SimpleHTTPRequestHandler):
 <body>
     <div class="container">
         <div class="header">
-            <h1>📱 Android File Transfer</h1>
+            <h1>� NetToss</h1>
             <p>Upload and download files wirelessly</p>
             <div class="mode-badge">📶 Hotspot Mode</div>
         </div>
@@ -1005,7 +1005,7 @@ class InternetTransferHandler(HotspotTransferHandler):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Android File Transfer - WiFi Mode</title>
+    <title>NetToss - WiFi Mode</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23667eea'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white'>📱</text></svg>">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1270,7 +1270,7 @@ class InternetTransferHandler(HotspotTransferHandler):
 <body>
     <div class="container">
         <div class="header">
-            <h1>📱 Android File Transfer</h1>
+            <h1>� NetToss</h1>
             <p>Upload and download files wirelessly</p>
             <div class="mode-badge">🌐 WiFi Mode</div>
         </div>
@@ -1523,10 +1523,10 @@ def get_local_ip():
         return "127.0.0.1"
 
 
-class AndroidTransferGUI:
+class NetTossGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("Android File Transfer")
+        self.root.title("NetToss - Wireless File Transfer")
         self.root.geometry("1050x900")
         self.root.resizable(True, True)
         self.root.minsize(850, 750)
@@ -1612,14 +1612,14 @@ class AndroidTransferGUI:
         # Title with gradient effect simulation
         title_label = ttk.Label(
             title_frame, 
-            text="⚡ Android File Transfer",
+            text="🚀 NetToss",
             style="Title.TLabel"
         )
         title_label.pack()
         
         subtitle_label = ttk.Label(
             title_frame,
-            text="Transfer files wirelessly between Android and PC",
+            text="Transfer files wirelessly between devices",
             style="Subtitle.TLabel"
         )
         subtitle_label.pack(pady=(5, 0))
@@ -1655,7 +1655,7 @@ class AndroidTransferGUI:
         
         hotspot_desc = ttk.Label(
             mode_frame,
-            text="      Android creates hotspot, PC connects",
+            text="      Phone creates hotspot, PC connects",
             style="Muted.TLabel"
         )
         hotspot_desc.pack(anchor=tk.W)
@@ -2517,7 +2517,7 @@ def main():
     # Apply modern dark blue theme
     apply_modern_theme(root)
     
-    app = AndroidTransferGUI(root)
+    app = NetTossGUI(root)
     root.mainloop()
 
 
@@ -2526,10 +2526,10 @@ if __name__ == "__main__":
     if sys.platform == "win32":
         # Windows: use subprocess to detach
         import subprocess
-        if not os.environ.get("ANDROID_TRANSFER_CHILD"):
+        if not os.environ.get("NETTOSS_CHILD"):
             subprocess.Popen(
                 [sys.executable, __file__],
-                env={**os.environ, "ANDROID_TRANSFER_CHILD": "1"},
+                env={**os.environ, "NETTOSS_CHILD": "1"},
                 creationflags=subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP,
                 close_fds=True
             )
